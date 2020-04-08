@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <h1>My contact details:</h1>
+  <p>D321, 2nd Floor Ramprastha Colony, Ghaziabad, Up, India</p>
+  <p>7838761116</p>
+  <p>shouryamundra@gmail.com</p>
+  <hr>
+  <form action="mailto:shouryamundra@gmail.com" method="post" enctype="text/plain">
+    <label for="">Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label for="">Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label for="avatar">Choose a profile picture:</label>
+    <input type="file" id="avatar" name="avatar"accept="image/png, image/jpeg"><br>
+    <label for="">Your Message:</label>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+    <input type="submit" value="Save">
+  </form>
+</body>
+
+</html>
